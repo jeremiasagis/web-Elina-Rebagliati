@@ -83,8 +83,8 @@ header{
   backdrop-filter:saturate(150%) blur(12px);
   border-bottom:1px solid var(--linea);
 }
-.barra{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:15px 28px;max-width:var(--ancho);margin:0 auto}
-.marca{display:flex;align-items:center;gap:11px}
+.barra{display:flex;align-items:center;justify-content:flex-end;gap:30px;padding:15px 28px;max-width:var(--ancho);margin:0 auto}
+.marca{display:flex;align-items:center;gap:11px;margin-right:auto}
 .marca svg{width:31px;height:31px;flex:none}
 .marca-nombre{font-family:var(--serif);font-size:1.3rem;color:var(--pantano);letter-spacing:.005em}
 
@@ -117,6 +117,11 @@ nav a.activo{color:var(--pantano);border-bottom-color:var(--oliva)}
 
 /* ── hero ─────────────────────────────────────────────────── */
 .hero{background:var(--marfil);padding:0;overflow:hidden}
+
+/* portada con imagen de fondo (inicio) */
+.hero-fondo{background:var(--marfil) url('portada.jpg') no-repeat 100% 50%;background-size:cover}
+.hero-texto-fondo{max-width:600px;min-height:min(78vh,640px);display:flex;flex-direction:column;justify-content:center;padding:80px 0}
+.hero-texto-fondo h1{margin-bottom:26px}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;min-height:min(78vh,640px)}
 .hero-texto{display:flex;flex-direction:column;justify-content:center;padding:76px 60px 76px 28px;max-width:660px;margin-left:auto}
 .hero h1{margin-bottom:26px}
@@ -133,6 +138,7 @@ nav a.activo{color:var(--pantano);border-bottom-color:var(--oliva)}
 .pilar{padding:44px 30px;text-align:center;border-right:1px solid var(--linea)}
 .pilar:last-child{border-right:none}
 .pilar svg{width:36px;height:36px;margin:0 auto 17px;display:block}
+.pilar img{width:76px;height:76px;object-fit:contain;margin:0 auto 15px;display:block;mix-blend-mode:multiply}
 .pilar-nombre{
   font-family:var(--sans);font-size:.73rem;font-weight:600;letter-spacing:.16em;
   text-transform:uppercase;color:var(--pantano);margin:0 0 9px;
@@ -160,6 +166,16 @@ nav a.activo{color:var(--pantano);border-bottom-color:var(--oliva)}
 .tarjeta ul{margin:16px 0 0;padding-left:19px;font-size:.93rem;color:var(--texto-suave)}
 .tarjeta li{margin-bottom:7px}
 .tarjeta-marfil{background:var(--marfil)}
+
+/* ── credenciales (3 arriba, 2 abajo, con ícono) ──────────── */
+.credenciales{display:flex;flex-wrap:wrap;justify-content:center;gap:26px}
+.credenciales .tarjeta{flex:0 1 350px;display:flex;gap:15px;align-items:flex-start;padding:30px 28px}
+.cred-icono{width:30px;height:30px;flex:none;margin-top:2px}
+
+/* ── mini datos (sobre mí) ────────────────────────────────── */
+.mini-datos{display:flex;flex-wrap:wrap;gap:14px 26px;margin-top:30px}
+.mini-dato{display:flex;align-items:center;gap:11px;font-size:.82rem;color:var(--texto-suave);line-height:1.4}
+.mini-dato svg{width:27px;height:27px;flex:none}
 
 /* ── servicio extendido ───────────────────────────────────── */
 .servicio{
@@ -265,6 +281,8 @@ footer a:hover{color:var(--marfil)}
   .hero-img{order:1;height:52vh;max-height:430px}
   .hero-img img{object-position:center 8%}
   .hero-img-vacia{display:none}
+  .hero-fondo{background-image:linear-gradient(rgba(242,239,232,.86),rgba(242,239,232,.86)),url('portada.jpg')}
+  .hero-texto-fondo{max-width:none;min-height:0;padding:64px 0}
   .dos,.dos-texto{grid-template-columns:1fr;gap:38px}
   .servicio{grid-template-columns:1fr;gap:18px;padding:36px 0}
   .servicio-etq{position:static;display:flex;align-items:baseline;gap:14px}
