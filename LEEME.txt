@@ -1,0 +1,124 @@
+SITIO WEB — ELI REBAGLIATI
+Consultora y Coach Ejecutiva
+═══════════════════════════════════════════════════════════════
+
+QUÉ ES ESTO
+
+Un sitio web completo en HTML. No necesita programas, ni instalaciones,
+ni una base de datos. Son archivos sueltos que cualquier hosting sabe leer.
+
+Podés abrir cualquiera de los .html haciendo doble clic para verlo en tu
+navegador, incluso sin internet.
+
+
+═══════════════════════════════════════════════════════════════
+ARCHIVOS
+
+  index.html ........... Inicio
+  sobre-mi.html ........ Sobre mí
+  servicios.html ....... Servicios
+  reportes.html ........ Reportes e informes
+  recursos.html ........ Recursos
+  contacto.html ........ Contacto
+
+  assets/estilo.css .......... Todos los colores, tipografías y diseño
+  assets/elina.jpg ........... Foto vertical (portada)
+  assets/elina-cuadrada.jpg .. Foto cuadrada (sobre mí y redes)
+  assets/favicon.svg ......... Ícono de la pestaña del navegador
+
+
+═══════════════════════════════════════════════════════════════
+CÓMO SUBIRLO
+
+Opción más simple — Netlify (gratis):
+  1. Entrá a app.netlify.com/drop
+  2. Arrastrá la carpeta "web" entera a la ventana
+  3. Listo: te da una dirección al instante
+  4. Después, en la configuración del sitio, conectás tu dominio
+
+Otras opciones que funcionan igual: Vercel, Cloudflare Pages, GitHub Pages,
+o el hosting tradicional que uses (subís los archivos por FTP a la carpeta
+public_html y ya está).
+
+IMPORTANTE: subí la carpeta completa, con la subcarpeta "assets" adentro.
+Si subís solo los .html, el sitio se ve sin estilos ni fotos.
+
+
+═══════════════════════════════════════════════════════════════
+ANTES DE PUBLICAR — REVISÁ ESTOS DATOS
+
+Están puestos según lo que figuraba en tu manual de marca y tu CV.
+Verificá que sean los correctos:
+
+  Correo ....... elinarebagliati@gmail.com
+  WhatsApp ..... +54 9 11 2720-5738
+  LinkedIn ..... linkedin.com/in/elirebagliati
+
+Si alguno cambia, buscá y reemplazá en los 6 archivos .html.
+El correo y el LinkedIn aparecen en el pie de todas las páginas y en
+contacto.html. El WhatsApp está en el pie y en contacto.html.
+
+
+═══════════════════════════════════════════════════════════════
+CÓMO EDITAR UN TEXTO
+
+Abrí el archivo con el Bloc de notas (o mejor, con Visual Studio Code,
+que es gratis y colorea el código).
+
+Buscá el texto que querés cambiar. Vas a ver algo así:
+
+    <h3>Coaching ejecutivo</h3>
+    <p>Acompañamiento uno a uno a directivos...</p>
+
+Cambiá solo lo que está ENTRE las etiquetas, nunca las etiquetas mismas.
+Guardá y refrescá el navegador.
+
+
+═══════════════════════════════════════════════════════════════
+SOBRE LA SECCIÓN "RECURSOS"
+
+Esa página está armada y funcionando, pero con tres artículos de ejemplo,
+para que veas cómo queda. Tenés tres caminos:
+
+  a) Reemplazar los títulos y textos por artículos tuyos reales, y poner
+     los enlaces donde dice href="#"
+  b) Dejarla así hasta que tengas contenido
+  c) Sacarla del menú: buscá esta línea en los 6 archivos y borrala
+     <li><a href="recursos.html">Recursos</a></li>
+     (aparece dos veces por archivo: en el menú de arriba y en el pie)
+
+Lo mismo vale para cualquier otra sección que no quieras publicar todavía.
+
+
+═══════════════════════════════════════════════════════════════
+LO QUE SE RESPETÓ DE TU MARCA
+
+  Colores    Pantano #222208 · Oliva #6A754A · Vino rosado #7F294C
+             Gris piedra #7D7D7A · Marfil cálido #F2EFE8
+
+  Tipografía Playfair Display para títulos, Inter para textos
+             (se cargan solas desde Google Fonts, no hay que instalar nada)
+
+  Logo       La estrella de cuatro puntas, dibujada como vector dentro
+             del código. Se ve nítida en cualquier tamaño y no depende
+             de ningún archivo de imagen.
+
+  Tono       Frases breves, preguntas claras, primera persona, sin frases
+             motivacionales ni promesas de transformación.
+
+  Estructura Editorial y con aire: mucho espacio en blanco, jerarquías
+             claras, sin ornamentación.
+
+
+═══════════════════════════════════════════════════════════════
+DETALLES TÉCNICOS
+
+  • Funciona en celular, tablet y computadora
+  • El menú se convierte en hamburguesa en pantallas chicas
+  • Las secciones aparecen suavemente al hacer scroll
+  • Preparado para compartir en WhatsApp y redes (muestra foto y título)
+  • Respeta la preferencia de "reducir movimiento" del sistema operativo
+  • Pesa muy poco: carga rápido incluso con mala conexión
+
+
+═══════════════════════════════════════════════════════════════
