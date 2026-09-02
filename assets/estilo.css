@@ -178,8 +178,8 @@ nav a.activo{color:var(--pantano);border-bottom-color:var(--oliva)}
 
 /* ── credenciales (3 arriba, 2 abajo, con ícono) ──────────── */
 .credenciales{display:flex;flex-wrap:wrap;justify-content:center;gap:26px}
-.credenciales .tarjeta{flex:0 1 350px;display:flex;gap:15px;align-items:flex-start;padding:30px 28px}
-.cred-icono{width:30px;height:30px;flex:none;margin-top:2px}
+.credenciales .tarjeta{flex:0 1 350px;display:flex;gap:18px;align-items:flex-start;padding:30px 28px}
+.cred-icono{width:52px;height:52px;flex:none;object-fit:contain}
 
 /* ── mini datos (sobre mí) ────────────────────────────────── */
 .mini-datos{display:flex;flex-wrap:wrap;gap:14px 26px;margin-top:30px}
